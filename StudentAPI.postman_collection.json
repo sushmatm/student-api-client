@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "ad53ecc4-8df3-4b06-b0cc-c842eafaa0a7",
+		"name": "StudentAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/sushmatm/Student/1.0.0/student/5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sushmatm/Student/1.0.0/student/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sushmatm",
+						"Student",
+						"1.0.0",
+						"student",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sushmatm/Student/1.0.0/student",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"studentID\": 5,\n  \"firstName\": \"Tiger5\",\n  \"lastName\": \"TT15\",\n  \"className\": \"6A\",\n  \"nationality\": \"Indian\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sushmatm/Student/1.0.0/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sushmatm",
+						"Student",
+						"1.0.0",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sushmatm/Student/1.0.0/student?studentID=2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/sushmatm/Student/1.0.0/student?studentID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sushmatm",
+						"Student",
+						"1.0.0",
+						"student"
+					],
+					"query": [
+						{
+							"key": "studentID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sushmatm/Student/1.0.0/student?className=2A",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sushmatm/Student/1.0.0/student?className=2A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sushmatm",
+						"Student",
+						"1.0.0",
+						"student"
+					],
+					"query": [
+						{
+							"key": "className",
+							"value": "2A"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sushmatm/Student/1.0.0/student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"studentID\": 5,\n  \"firstName\": \"Tiger5\",\n  \"lastName\": \"TT15\",\n  \"className\": \"6A\",\n  \"nationality\": \"Indian\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sushmatm/Student/1.0.0/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sushmatm",
+						"Student",
+						"1.0.0",
+						"student"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
